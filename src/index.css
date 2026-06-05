@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@theme {
+    --font-heading: "Inter", sans-serif;
+    --font-sans: "Inter", sans-serif;
+    --color-background: #FAFAFA;
+    --color-foreground: #111111;
+    --color-accent: #C9A84C;
+    --color-accent-dark: #A8892E;
+    --color-success: #1a472a;
+    --color-whatsapp: #075E54;
+    --color-whatsapp-lt: #25D366;
+    --color-offer: #EF4444;
+    --color-border: #E5E5E5;
+}
+
+:root {
+    --background: #FAFAFA;
+    --foreground: #111111;
+    --primary: #111111;
+    --primary-foreground: #FFFFFF;
+    --accent: #C9A84C;
+    --accent-foreground: #111111;
+    --border: #E5E5E5;
+    --radius: 0.75rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
